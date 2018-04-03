@@ -1,0 +1,42 @@
+import java.util.ArrayList;
+
+/**
+ * 
+ * @author SP
+ *
+ */
+public class DfsInfo {
+/*
+ * per supportare la dfs2
+ */
+	static public enum color{WHITE,GREY,BLACK};
+	public color[] marked;
+	public int tick;
+	public int[] pig;
+	public int[] d;
+	public int[] f;
+	public ArrayList<GridWorld.Coordinate> p;
+	/**
+	 * @param: marked      vettore per la colorazione dei vertici
+	 * @param: tick        contatore tempi di visita
+	 * @param: pig         vettore dei predecessori nella foresta DF
+	 * @param: d           vettore tempi di scoperta
+	 *@param: p				lista;
+	 * @param: f           vettore tempi di completamento
+	 */
+	public void addP(GridWorld.Coordinate luke){
+		
+	}
+	public DfsInfo(int n){
+		/**
+		 * inizializza dfsinfo alla dimensione del grafo
+		 * @return: void funziona per reference
+		 */
+		marked=new color[n];
+		tick=0;
+		pig= new int[n];
+		d= new int[n];
+		f= new int[n];
+		p= new ArrayList<GridWorld.Coordinate>();
+	}
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/TextAnalizerDictionary2017/src/Main.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<booleanAttribute key="org.eclipse.jdt.launching.ATTR_USE_START_ON_FIRST_THREAD" value="true"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="Main"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="java Main TRAIN C:\Users\stefano\Desktop\File\dictionary.txt C:\Users\stefano\Desktop\File\File_OK C:\Users\stefano\Desktop\File\File_SPAM C:\Users\stefano\Desktop\run.txt"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="TextAnalizerDictionary2017"/>
+</launchConfiguration>

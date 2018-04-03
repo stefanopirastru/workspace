@@ -1,0 +1,348 @@
+import java.util.ArrayList;
+import java.util.PriorityQueue;
+import java.util.Scanner;
+/**
+ * 
+ * @author stefano pirastru
+ * 
+ * visita di gridworld con depth-forest search
+ *
+ */
+public class Main {
+	/**
+	 * 
+	 * @param colore: vettore colore coordinate WHITE non visitato GREY visitato ma non completato BLACK visitato e completato
+	 *
+	 */
+	public static enum colore{ WHITE, GREY, BLACK};
+	public static void move(Grafo<GridWorld.Coordinate> G, GridWorld gw,colore[] marked,GridWorld.Coordinate before, GridWorld.Coordinate after,ArrayList<GridWorld.Coordinate> cell){
+		/**
+		 * @param G: grafo non orientato
+		 * @param gw: istanza di gridworld
+		 * @param marked: vettore di colori associato alle celle di gridworld
+		 * @param before: dove sono
+		 * @param after: dove posso andare
+		 * @param cell: vettore delle celle delle celle visitate in precedenza
+		 * operazione di base: accessi a marked
+		 * costo dfs teta(diffCol) oppure teta(diffRow) 
+		 */
+		
+		int diffCol=after.col-before.col;
+		int diffRow=after.row-before.row;
+		if(!gw.targetReached()){
+			if(diffRow==0&&diffCol!=0){
+				if(diffCol>0){
+					for(int i=0;i<diffCol;i++){
+						
+						gw.moveToAdjacentCell(GridWorld.Direction.EAST);
+						//System.err.print(gw.getCurrentCell());
+						if(!cell.contains(gw.getCurrentCell())){
+							cell.add(gw.getCurrentCell());
+							//System.err.print(after);
+							marked[cell.size()]=colore.GREY;
+						}
+					}
+				}
+				if(diffCol<0){
+					diffCol*=(-1);
+					for(int i=0;i<diffCol;i++){
+						gw.moveToAdjacentCell(GridWorld.Direction.WEST);
+						//System.out.print(gw.getCurrentCell());
+						if(!cell.contains(gw.getCurrentCell())){
+							cell.add(gw.getCurrentCell());
+							//System.err.print(after);
+							marked[cell.size()]=colore.GREY;
+						}
+					}
+				}
+			}
+			if(diffCol==0&&diffRow!=0){
+				if(diffRow>0){
+					for(int i=0;i<diffRow;i++){
+						gw.moveToAdjacentCell(GridWorld.Direction.SOUTH);
+						//System.err.print(gw.getCurrentCell());
+						if(!cell.contains(gw.getCurrentCell())){
+							cell.add(gw.getCurrentCell());
+							//System.err.print(after);
+							marked[cell.size()]=colore.GREY;
+						}
+					}
+				}
+				if(diffRow<0){
+					diffRow*=(-1);
+					for(int i=0;i<diffCol;i++){
+						gw.moveToAdjacentCell(GridWorld.Direction.NORTH);
+						//System.out.print(gw.getCurrentCell());
+						if(!cell.contains(gw.getCurrentCell())){
+							cell.add(gw.getCurrentCell());
+							//System.err.print(after);
+							marked[cell.size()]=colore.GREY;
+						}
+					}
+				}
+			}
+		}
+	}
+	public static void dfs(GridWorld gw, Grafo<GridWorld.Coordinate> G,colore[] marked,ArrayList<GridWorld.Coordinate> cell){
+		/**
+		 * implementazione dell'algoritmo depth-first search
+		 * @param gw: istanza di gridworld
+		 * @param G: grafo
+		 * @param marked: vettorecolore associato alle celle
+		 * @param cell: lista dei predecessori
+		 * 
+		 * operazione di base: accessi a marked
+		 * costo dfs teta(V)+teta(V)
+		 * dove V è il numero di nodi 
+		 */
+		for(int u=0;u<gw.getMinimumDistanceToTarget()+5;u++){
+			marked[u]=colore.WHITE;
+			/*
+			 * costruisco un albero che ha al massimo 5 passi in più del cammino minimo
+			 */
+		}
+		for(int u=0;u<gw.getMinimumDistanceToTarget()+5;u++){
+			if(marked[u]==colore.WHITE){
+				dfsVisit(gw,G,u,marked,cell);
+			}
+		}
+	}
+	public static void dfsVisit(GridWorld gw, Grafo<GridWorld.Coordinate> G, int u,colore[] marked, ArrayList<GridWorld.Coordinate> cell){
+		/**
+		 * passo base di visita
+		 * @param gw: istanza di gridworld
+		 * @param G: grafo di coordinate
+		 * @param u: indice della distanza dalla coordinata (0,0)
+		 * @param marked: vettore di colori associato alle celle di gridworld
+		 * @param cell: vettore predecessori
+		 * operazione di base: accessi a marked
+		 * costo dfsVisit teta(V)+ teta(E) = teta(V+E)
+		 * dove V è il numero di nodi 
+		 * E è il numero di archi
+		 */
+		Iterable<GridWorld.Coordinate> adjCell=gw.getAdjacentFreeCells();
+		GridWorld.Coordinate here=gw.getCurrentCell();
+		int z=u+1;
+		G.V.add(new ArrayList<GridWorld.Coordinate>());
+		for(GridWorld.Coordinate b:adjCell){
+			G.V.get(z).add(b);
+		}
+		for(GridWorld.Coordinate b:adjCell){
+				if(marked[z]==colore.WHITE){
+					move(G,gw,marked,here,b,cell);
+					dfsVisit(gw,G,z,marked,cell);
+			}
+		
+			
+		}
+	}
+	public static void bfs(GridWorld gw ,Grafo<GridWorld.Coordinate> G, colore[] marked,ArrayList<GridWorld.Coordinate> cell){
+		/**
+		 * breadth-first search
+		 * visita in profondità
+		 * 
+		 */
+		//System.out.println("sono in bfs"+gw.getCurrentCell()+"(x,y)");
+		for(int u=0;u<gw.getMinimumDistanceToTarget();u++){
+			marked[u]=colore.WHITE;
+		}
+		for(int u=0;u<gw.getMinimumDistanceToTarget();u++){
+			if(marked[u]==colore.WHITE){
+				//System.out.println("sono in bfs"+gw.getCurrentCell()+"(x,y)");
+				bfsVisit(gw,G,u,marked,cell);
+			}
+		}
+	}
+	public static void bfsVisit(GridWorld gw, Grafo<GridWorld.Coordinate> G, int s,colore[] marked, ArrayList<GridWorld.Coordinate> cell){
+		Iterable<GridWorld.Coordinate> adjCell=gw.getAdjacentFreeCells();
+		GridWorld.Coordinate here=gw.getCurrentCell();
+		int z=s+1;
+		PriorityQueue<GridWorld.Coordinate> q=new PriorityQueue<GridWorld.Coordinate>();
+		
+		
+		marked[s]=colore.GREY;
+		try{
+		q.add(here);		
+		}catch(NullPointerException e){
+			System.err.println(e.getStackTrace());
+			System.out.println("forse qua");
+			System.exit(0);
+		}
+		GridWorld.Coordinate u,v;
+		while(!q.isEmpty()){
+			u=q.remove();
+			for(GridWorld.Coordinate i: adjCell){
+				v=i;
+				if(marked[z]==colore.WHITE){
+					marked[z]=colore.GREY;
+					move(G,gw,marked,here,i,cell);
+					System.out.println("sono in bfsVisit"+here+"(x,y)");
+					q.add(v);
+				}
+				
+			}
+			marked[z]=colore.BLACK;
+		}
+		
+	}
+	public static void main(String[] args){
+		
+		Integer size =Integer.parseInt(args[0]);
+		Double density=Double.parseDouble(args[1]);
+		Long seed =Long.parseLong(args[2]);
+
+		long n=11,sc1=0,sc2=0,tsc1=0,tsc2=0 ,tsc3=0 ,sc3=0,cnt=0;
+	
+		for(int i=1;i<n;i++){
+			for (int j=10; j<size;j++){
+				cnt++;
+				sc2=0;
+				sc1=0;long sec=0; long min=0;
+				double dens=((double)(1/(double)(n)))*i;
+				System.out.println("\nchallenge: "+cnt+"  densisty: "+ dens+ "   size "+j+"  numcell "+(j*j));
+			
+				GridWorld gw= new GridWorld(j, dens, seed);
+				//System.out.println("densisty:  "+ dens+ "   size "+j);
+				robotNavigatorIterative r = new robotNavigatorIterative(gw,j);
+				
+				//System.out.println("first way");
+				long startTime = System.nanoTime();
+				
+				r.firstWayToTarget();
+				//r.printWay();
+				
+				long endTime   = System.nanoTime();
+				long totalTime = endTime - startTime;
+				System.out.println(totalTime);
+				sc1=sc1+r.way.size();
+				sec=(totalTime/1000);
+				min=(sec/60);
+				sc2=sc2+r.way.size();
+				System.out.println(totalTime+"\tms first way\tpassi "+r.way.size()+"\t"+sec+"\tsec  o \t"+min+"\tmin");
+				
+				r.resetRobotNavigator();
+				long temp=totalTime;
+				//System.out.println("min way");
+				
+				r.exploreWorld();
+				r.minWay();
+				r.exploreWorld();
+				r.minWay();
+				//r.printWay();
+				
+				 endTime   = System.nanoTime();
+				 totalTime = endTime - startTime;
+				System.out.println(totalTime);
+				sec=(totalTime/1000);
+				min=(sec/60);
+				sc2=sc2+r.way.size();
+				System.out.println(totalTime+"\tms min way\tpassi "+r.way.size()+"\t"+sec+"\tsec  o \t"+min+"\tmin");
+				
+				
+ startTime = System.nanoTime();
+				
+				
+				gw = new GridWorld(j, dens, seed);
+				//System.out.println("everything seems ok.");
+				gw.print();
+				/*
+				 * mostro il percorso
+				 */
+				Grafo<GridWorld.Coordinate> G=new Grafo<GridWorld.Coordinate>();
+				G.graphInit();
+				/*
+				 * nuovo grafo con G.V vuoto
+				 */
+				ArrayList<GridWorld.Coordinate> zero= new ArrayList<GridWorld.Coordinate>();
+				zero.add(gw.getCurrentCell());
+				G.V.add(zero);
+				/*
+				 * G.V.Get(0) è un arraylist di un elemento con solo la cella iniziale, cammino di profondità zero
+				 */
+				ArrayList<GridWorld.Coordinate> luke= new ArrayList<GridWorld.Coordinate>();
+				/*
+				 * vettore delle celle visitate
+				 */
+				luke.add(gw.getCurrentCell());
+				if(gw.getMinimumDistanceToTarget()==-1){
+					/*
+					 * se gridworld è una matrice 1x1 o non esiste un percorso
+					 */
+					System.out.println("Nessun Percorso!");
+					System.exit(0);
+				}
+				assert(gw.getMinimumDistanceToTarget()>0);
+				/*
+				 * se c'è un percorso
+				 */
+				colore[] marked=new colore[100];
+				System.out.println("premere : <n> <opzione>");
+				System.out.println("0 per eseguire una ricerca in ampiezza dfs");
+				System.out.println("1 per eseguire una ricerca in profondita' bfs");
+				char pin=' ';
+				Scanner input= new Scanner(System.in);
+				int x=input.nextInt();
+				switch(x){
+				case 0:
+					/*
+					 * inizializzo il vettore come se potessi visitare tutte le celle di gridworld
+					 */
+					dfs(gw,G,marked,luke);
+					/*
+					 * depth-first search
+					 */
+					System.out.print("Percorso dfs");
+					System.out.print(luke);
+					/*
+					 * costo totale teta(V)+teta(V)+teta(E)= teta(V+E)
+					 */
+					break;
+				case 1:
+					bfs(gw,G,marked,luke);
+					/*
+					 *breadth-forest search 
+					 */
+					System.out.println("Percorso bfs");
+					System.out.println(luke);
+					break;
+				default:
+					System.out.println(x+"non è un valore accettabile");
+					System.exit(0);
+				}
+				
+				
+				//r.printWay();
+				
+				 endTime   = System.nanoTime();
+				System.out.println(totalTime);
+				sec=(totalTime/1000);
+				min=(sec/60);
+				sc3=sc3+r.way.size();
+				System.out.println(totalTime+"\tms min way\tpassi "+r.way.size()+"\t"+sec+"\tsec  o \t"+min+"\tmin");
+				
+				
+				
+				System.out.println("vince gara cammino minimo:");
+				if(sc1<sc2){
+					System.out.println("vince first way con +"+(sc2-sc1));
+				}else {
+					System.out.println("vince min way con +"+(sc1-sc2));
+				}
+				if(sc1<sc3 && sc2<sc3){
+					System.out.println("vince min way con +"+(sc3-sc2)+ "+++"+(sc3-sc1));
+				}
+			
+		System.out.println("\n\nvince gara cammino minimo totalee:");
+		if(sc1<sc2){
+			System.out.println("vince first way con "+(sc2-sc1));
+		}else {
+			System.out.println("vince min way con "+(sc1-sc2));
+		}
+		
+	}
+		
+		
+		
+		
+	}}
+}

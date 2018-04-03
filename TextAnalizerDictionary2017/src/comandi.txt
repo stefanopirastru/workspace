@@ -1,0 +1,3 @@
+java Main TEST src\File\dictionary.txt src\ciao.txt  src\File\File_TEST
+
+java Main TRAIN src\File\dictionary.txt src\File\File_OK src\File\File_SPAM src\ciao.txt

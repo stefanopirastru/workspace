@@ -1,0 +1,7 @@
+dictionary.txt
+
+fileOk_ 1 50
+
+fileSpam_ 1 50
+
+fileToAnalyze_ 1 30

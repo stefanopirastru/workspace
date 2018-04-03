@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="C:\Users\stefano\workspace" key="org.eclipse.jdt.ui.lastextjar"/>
+	<item value="filter_imports;" key="filters_last_used"/>
+	<item value="C:\Users\stefano\workspace\Homework2\src" key="org.eclipse.jdt.ui.last.external.project"/>
+	<section name="org.eclipse.ltk.ui.refactoring.settings">
+	</section>
+	<section name="SelfEncapsulateFieldWizard">
+		<item value="false" key="GenerateJavadoc"/>
+	</section>
+	<section name="org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart">
+		<item value="2" key="layout"/>
+		<item value="true" key="group_libraries"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;packageExplorer group_libraries=&quot;1&quot; layout=&quot;2&quot; linkWithEditor=&quot;0&quot; rootMode=&quot;1&quot; workingSetName=&quot;Aggregate for window 1443100357574&quot;&gt;&#x0D;&#x0A;&lt;customFilters userDefinedPatternsEnabled=&quot;false&quot;&gt;&#x0D;&#x0A;&lt;xmlDefinedFilters&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.StaticsFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.mylyn.java.ui.MembersFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.NonJavaProjectsFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer_patternFilterId_.*&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.NonSharedProjectsFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.SyntheticMembersFilter&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.ContainedLibraryFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.internal.ui.PackageExplorer.HideInnerClassFilesFilter&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.internal.ui.PackageExplorer.EmptyInnerPackageFilter&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.m2e.MavenModuleFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.ClosedProjectsFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.EmptyLibraryContainerFilter&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.PackageDeclarationFilter&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.ImportDeclarationFilter&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.NonJavaElementFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.LibraryFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.CuAndClassFileFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.internal.ui.PackageExplorer.EmptyPackageFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.NonPublicFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.LocalTypesFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.FieldsFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;/xmlDefinedFilters&gt;&#x0D;&#x0A;&lt;/customFilters&gt;&#x0D;&#x0A;&lt;/packageExplorer&gt;" key="memento"/>
+		<item value="1" key="rootMode"/>
+		<item value="false" key="linkWithEditor"/>
+	</section>
+	<section name="NewClassWizardPage">
+		<item value="false" key="create_constructor"/>
+		<item value="true" key="create_unimplemented"/>
+	</section>
+	<section name="OptionalMessageDialog.hide.">
+		<item value="true" key="org.eclipse.jdt.ui.typecomment.deprecated"/>
+	</section>
+	<section name="org.eclipse.jdt.internal.ui.typehierarchy.QuickHierarchy">
+		<item value="true" key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_USE_PERSISTED_SIZE"/>
+		<item value="320" key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_HEIGHT"/>
+		<item value="400" key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_WIDTH"/>
+		<item value="false" key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_USE_PERSISTED_LOCATION"/>
+	</section>
+	<section name="RefactoringWizard.preview">
+		<item value="600" key="width"/>
+		<item value="400" key="height"/>
+	</section>
+	<section name="javadoc">
+		<item value="public" key="access"/>
+		<item value="false" key="noindex"/>
+		<item value="C:\Users\stefano\workspace\TextAnalizerDictionary2017\javadoc.xml" key="antpath"/>
+		<item value="false" key="nodeprecatedlist"/>
+		<item value="true" key="use"/>
+		<item value="true" key="author"/>
+		<item value="false" key="nodeprecated"/>
+		<item value="false" key="nonavbar"/>
+		<item value="" key="docletpath"/>
+		<item value="C:\Program Files (x86)\Java\jdk1.8.0_60\bin\javadoc.exe;C:\Users\stefano\workspace\TextAnalizerDictionary2017\src\Main.java" key="javadoc_command_history"/>
+		<item value="1.8" key="source"/>
+		<item value="true" key="version"/>
+		<item value="" key="docletname"/>
+		<item value="true" key="splitindex"/>
+		<item value="true" key="fromStandard"/>
+		<item value="false" key="notree"/>
+		<item value="C:\Users\stefano\workspace\TextAnalizerDictionary2017\doc" key="destdir"/>
+		<item value="false" key="openinbrowser"/>
+		<section name="projects">
+			<section name="SorgentiDate">
+				<item value="C:\Users\stefano\workspace\SorgentiDate\javadoc.xml" key="antpath"/>
+				<item value="C:\Users\stefano\workspace\SorgentiDate\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="tacgilbert">
+				<item value="C:\Users\stefano\workspace\tacgilbert\javadoc.xml" key="antpath"/>
+				<item value="C:\Users\stefano\workspace\tacgilbert\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="FiltroAntiSpam">
+				<item value="C:\Users\stefano\workspace\FiltroAntiSpam\javadoc.xml" key="antpath"/>
+				<item value="C:\Users\stefano\workspace\FiltroAntiSpam\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="Euclide">
+				<item value="C:\Users\stefano\workspace\Euclide\javadoc.xml" key="antpath"/>
+				<item value="C:\Users\stefano\workspace\Euclide\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="RemoteSystemsTempFiles">
+				<item value="C:\Users\stefano\workspace\RemoteSystemsTempFiles\javadoc.xml" key="antpath"/>
+				<item value="C:\Users\stefano\workspace\RemoteSystemsTempFiles\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="ProdottoMatrici">
+				<item value="C:\Users\stefano\workspace\ProdottoMatrici\javadoc.xml" key="antpath"/>
+				<item value="C:\Users\stefano\workspace\ProdottoMatrici\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="GridWorld">
+				<item value="C:\Users\stefano\workspace\GridWorld\javadoc.xml" key="antpath"/>
+				<item value="C:\Users\stefano\workspace\GridWorld\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="RimozioneDuplicati">
+				<item value="C:\Users\stefano\workspace\RimozioneDuplicati\javadoc.xml" key="antpath"/>
+				<item value="C:\Users\stefano\workspace\RimozioneDuplicati\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="esercitazione 2">
+				<item value="C:\Users\stefano\workspace\esercitazione 2\javadoc.xml" key="antpath"/>
+				<item value="C:\Users\stefano\workspace\esercitazione 2\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="Prova">
+				<item value="C:\Users\stefano\workspace\Prova\javadoc.xml" key="antpath"/>
+				<item value="C:\Users\stefano\workspace\Prova\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="SorgentiDate3">
+				<item value="C:\Users\stefano\workspace\SorgentiDate3\javadoc.xml" key="antpath"/>
+				<item value="C:\Users\stefano\workspace\SorgentiDate3\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="Parsing">
+				<item value="C:\Users\stefano\workspace\Parsing\javadoc.xml" key="antpath"/>
+				<item value="C:\Users\stefano\workspace\Parsing\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="SorgentiDate4">
+				<item value="C:\Users\stefano\workspace\SorgentiDate4\javadoc.xml" key="antpath"/>
+				<item value="C:\Users\stefano\workspace\SorgentiDate4\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="SorgentiDate2">
+				<item value="C:\Users\stefano\workspace\SorgentiDate2\javadoc.xml" key="antpath"/>
+				<item value="C:\Users\stefano\workspace\SorgentiDate2\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="struttureDati">
+				<item value="C:\Users\stefano\workspace\struttureDati\javadoc.xml" key="antpath"/>
+				<item value="C:\Users\stefano\workspace\struttureDati\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="ElementiBase">
+				<item value="C:\Users\stefano\workspace\ElementiBase\javadoc.xml" key="antpath"/>
+				<item value="C:\Users\stefano\workspace\ElementiBase\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="SorgentiDate5">
+				<item value="C:\Users\stefano\workspace\SorgentiDate5\javadoc.xml" key="antpath"/>
+				<item value="C:\Users\stefano\workspace\SorgentiDate5\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="TextAnalyzer">
+				<item value="C:\Users\stefano\workspace\TextAnalyzer\javadoc.xml" key="antpath"/>
+				<item value="C:\Users\stefano\workspace\TextAnalyzer\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="Esercitazione 4">
+				<item value="C:\Users\stefano\workspace\Esercitazione 4\javadoc.xml" key="antpath"/>
+				<item value="C:\Users\stefano\workspace\Esercitazione 4\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="TextAnalizerDictionary2017">
+				<item value="C:\Users\stefano\workspace\TextAnalizerDictionary2017\javadoc.xml" key="antpath"/>
+				<item value="C:\Users\stefano\workspace\TextAnalizerDictionary2017\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="Esercitazione3">
+				<item value="C:\Users\stefano\workspace\Esercitazione3\javadoc.xml" key="antpath"/>
+				<item value="C:\Users\stefano\workspace\Esercitazione3\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="ProvaDEsame">
+				<item value="C:\Users\stefano\workspace\ProvaDEsame\javadoc.xml" key="antpath"/>
+				<item value="C:\Users\stefano\workspace\ProvaDEsame\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="UML">
+				<item value="C:\Users\stefano\workspace\UML\javadoc.xml" key="antpath"/>
+				<item value="C:\Users\stefano\workspace\UML\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="DividiEtImpera">
+				<item value="C:\Users\stefano\workspace\DividiEtImpera\javadoc.xml" key="antpath"/>
+				<item value="C:\Users\stefano\workspace\DividiEtImpera\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="simulazione">
+				<item value="C:\Users\stefano\workspace\simulazione\javadoc.xml" key="antpath"/>
+				<item value="C:\Users\stefano\workspace\simulazione\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="VisitorTac">
+				<item value="C:\Users\stefano\workspace\VisitorTac\javadoc.xml" key="antpath"/>
+				<item value="C:\Users\stefano\workspace\VisitorTac\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="Ex1">
+				<item value="C:\Users\stefano\workspace\Ex1\javadoc.xml" key="antpath"/>
+				<item value="C:\Users\stefano\workspace\Ex1\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="ForzaBruta">
+				<item value="C:\Users\stefano\workspace\ForzaBruta\javadoc.xml" key="antpath"/>
+				<item value="C:\Users\stefano\workspace\ForzaBruta\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+		</section>
+	</section>
+	<section name="ClasspathContainerSelectionPage">
+		<item value="0" key="index"/>
+	</section>
+	<section name="quick_assist_proposal_size">
+	</section>
+	<section name="BuildPathsPropertyPage">
+		<item value="2" key="pageIndex"/>
+	</section>
+	<section name="NewPackageWizardPage">
+		<item value="false" key="create_package_info_java"/>
+	</section>
+	<section name="JavadocWizardDialog">
+		<item value="616" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="567" key="DIALOG_HEIGHT"/>
+		<item value="383" key="DIALOG_X_ORIGIN"/>
+		<item value="8" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="JavaSearchPage">
+		<item value="4" key="HISTORY_SIZE"/>
+		<item value="false" key="CASE_SENSITIVE"/>
+		<item value="11" key="INCLUDE_MASK"/>
+		<section name="HISTORY2">
+			<item value="false" key="isCaseSensitive"/>
+			<item value="" key="javaElement"/>
+			<item value="0" key="scope"/>
+			<item value="11" key="includeMask"/>
+			<item value="Ststem.out.println(&quot;x&quot;)" key="pattern"/>
+			<item value="2" key="limitTo"/>
+			<item value="0" key="matchLocations"/>
+			<item value="0" key="searchFor"/>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY3">
+			<item value="false" key="isCaseSensitive"/>
+			<item value="" key="javaElement"/>
+			<item value="0" key="scope"/>
+			<item value="11" key="includeMask"/>
+			<item value="fino a qui" key="pattern"/>
+			<item value="2" key="limitTo"/>
+			<item value="0" key="matchLocations"/>
+			<item value="0" key="searchFor"/>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY0">
+			<item value="false" key="isCaseSensitive"/>
+			<item value="" key="javaElement"/>
+			<item value="0" key="scope"/>
+			<item value="11" key="includeMask"/>
+			<item value="System.err" key="pattern"/>
+			<item value="3" key="limitTo"/>
+			<item value="0" key="matchLocations"/>
+			<item value="0" key="searchFor"/>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY1">
+			<item value="false" key="isCaseSensitive"/>
+			<item value="" key="javaElement"/>
+			<item value="0" key="scope"/>
+			<item value="11" key="includeMask"/>
+			<item value="read it OK" key="pattern"/>
+			<item value="2" key="limitTo"/>
+			<item value="0" key="matchLocations"/>
+			<item value="0" key="searchFor"/>
+			<list key="workingSets">
+			</list>
+		</section>
+	</section>
+	<section name="completion_proposal_size">
+	</section>
+	<section name="JavaElementSearchActions">
+	</section>
+</section>

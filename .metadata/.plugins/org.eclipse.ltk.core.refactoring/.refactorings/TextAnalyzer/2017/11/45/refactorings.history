@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;TextAnalyzerWithDictionary.java&apos; to &apos;TextAnalyzer/src/(default package)&apos;&#x0D;&#x0A;- Original project: &apos;TextAnalyzer&apos;&#x0D;&#x0A;- Destination element: &apos;TextAnalyzer/src/(default package)&apos;&#x0D;&#x0A;- Original element: &apos;TextAnalyzerWithDictionary.java&apos;" description="Copy file" destination="/src&lt;" element1="TextAnalyzerWithDictionary.java" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1509972915582" units="0" version="1.0"/>
+</session>
